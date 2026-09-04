@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Syperix — Savunma, tarım teknolojileri ve yapay zeka alanında Ar-Ge projeleri geliştiren yenilikçi teknoloji takımı.">
+  <meta name="keywords" content="Syperix, savunma teknolojileri, yapay zeka, tarım teknolojisi, Gök Siper, YZDOSS, İHA, drone">
+  <title>SYPERIX — Teknoloji · Savunma · İnovasyon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ====== CUSTOM CURSOR ====== -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ====== LOADING SCREEN ====== -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <img src="assets/logo.png" alt="Syperix" class="loader-logo">
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+      <span class="loader-text">SİSTEM BAŞLATILIYOR</span>
+    </div>
+  </div>
+
+  <!-- ====== NAV ====== -->
+  <nav class="nav" id="mainNav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-brand">
+        <img src="assets/logo.png" alt="Syperix" class="nav-brand-img">
+        <span>SYPERIX</span>
+      </a>
+      <div class="nav-menu" id="navMenu">
+        <a href="#hero" class="nav-link active" data-section="hero">Ana Sayfa</a>
+        <a href="#about" class="nav-link" data-section="about">Hakkımızda</a>
+        <a href="#team" class="nav-link" data-section="team">Üyelerimiz</a>
+        <a href="#active-projects" class="nav-link" data-section="active-projects">Aktif Projeler</a>
+        <a href="#rnd" class="nav-link" data-section="rnd">Ar-Ge</a>
+        <a href="#achievements" class="nav-link" data-section="achievements">Başarılar</a>
+        <a href="#supporters" class="nav-link" data-section="supporters">Destekçiler</a>
+        <a href="#contact" class="nav-link" data-section="contact">İletişim</a>
+      </div>
+      <a href="https://instagram.com/syperix_tr" target="_blank" class="nav-social-btn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+        @syperix_tr
+      </a>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menü">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ====== HERO ====== -->
+  <section class="hero" id="hero">
+    <canvas id="gridCanvas"></canvas>
+    <div class="hero-glitch-lines"></div>
+    <div class="hero-content">
+      <div class="hero-logo-wrap">
+        <img src="assets/logo.png" alt="Syperix Logo" class="hero-logo">
+      </div>
+      <div class="hero-tagline">TEKNOLOJİ &bull; SAVUNMA &bull; İNOVASYON</div>
+      <h1 class="hero-title">
+        <span class="hero-line-1">Geleceği</span>
+        <span class="hero-line-2">Bugünden</span>
+        <span class="hero-line-3">Tasarlıyoruz</span>
+      </h1>
+      <p class="hero-desc">
+        Savunma sistemleri, tarım teknolojileri ve yapay zeka alanında 
+        yenilikçi Ar-Ge projeleri geliştiren bağımsız teknoloji takımı.
+      </p>
+      <div class="hero-actions">
+        <a href="#active-projects" class="btn-main">Projelerimiz</a>
+        <a href="#contact" class="btn-ghost">İletişim</a>
+      </div>
+      <div class="hero-metrics">
+        <div class="metric">
+          <span class="metric-num" data-target="4">0</span>
+          <span class="metric-label">Takım Üyesi</span>
+        </div>
+        <div class="metric-divider"></div>
+        <div class="metric">
+          <span class="metric-num" data-target="2">0</span>
+          <span class="metric-label">Aktif Proje</span>
+        </div>
+        <div class="metric-divider"></div>
+        <div class="metric">
+          <span class="metric-num" data-target="5">0</span>
+          <span class="metric-label">Ar-Ge Projesi</span>
+        </div>
+        <div class="metric-divider"></div>
+        <div class="metric">
+          <span class="metric-num" data-target="1">0</span>
+          <span class="metric-label">Ulusal Derece</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Keşfet</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ====== ABOUT ====== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-tag reveal-up">Hakkımızda</div>
+      <h2 class="section-title reveal-up">Biz Kimiz?</h2>
+      <div class="about-layout">
+        <div class="about-text reveal-up">
+          <p>
+            <strong>Syperix</strong>, 2025 yılında kurulan, savunma teknolojileri, tarım inovasyonu ve yapay zeka 
+            alanlarında özgün Ar-Ge projeleri geliştiren bağımsız bir teknoloji takımıdır. 
+          </p>
+          <p>
+            Genç ve dinamik ekibimizle, Türkiye'nin teknolojik geleceğine katkı sağlamak amacıyla 
+            çalışıyoruz. Hava savunma sistemlerinden akıllı tarım çözümlerine, optik teknolojilerden 
+            otonom yazılım platformlarına kadar geniş bir yelpazede projeler üretiyoruz.
+          </p>
+          <p>
+            Amacımız sadece teknoloji üretmek değil; ürettiğimiz teknolojiyle gerçek dünya 
+            problemlerine çözüm sunmak ve ülkemizin savunma ile tarım sektörlerine somut 
+            değer katmaktır.
+          </p>
+        </div>
+        <div class="about-pillars reveal-up">
+          <div class="pillar">
+            <div class="pillar-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>Savunma</h3>
+            <p>Hava savunma ve optik sistemler geliştiriyoruz.</p>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3>Tarım Teknolojisi</h3>
+            <p>Akıllı tarım çözümleri ve yapay zeka entegrasyonu.</p>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+            </div>
+            <h3>Yapay Zeka</h3>
+            <p>Otonom sistemler ve akıllı karar destek mekanizmaları.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== TEAM ====== -->
+  <section class="section team-section" id="team">
+    <div class="container">
+      <div class="section-tag reveal-up">Üyelerimiz</div>
+      <h2 class="section-title reveal-up">Ekibimiz</h2>
+      <p class="section-subtitle reveal-up">Syperix'i oluşturan tutkulu mühendisler.</p>
+      <div class="team-grid">
+
+        <!-- Captain -->
+        <div class="team-card captain-card reveal-up">
+          <div class="tc-ranks">
+            <span class="tc-rank">KAPTAN</span>
+            <span class="tc-rank">ELEKTRİK-ELEKTRONİK EKİBİ</span>
+          </div>
+          <div class="tc-avatar">
+            <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="8" r="4"/><path d="M6 21v-2a4 4 0 014-4h4a4 4 0 014 4v2"/><path d="M12 1l1.09 2.41L15.5 4l-2.41 1.09L12 7.5l-1.09-2.41L8.5 4l2.41-1.09L12 1z" fill="var(--accent)" stroke="var(--accent)"/></svg>
+          </div>
+          <h3 class="tc-name">Tuğrul Murathan Tapar</h3>
+          <span class="tc-role">Takım Kaptanı</span>
+          <span class="tc-dept">Elektrik-Elektronik & Ar-Ge</span>
+        </div>
+
+        <!-- Member -->
+        <div class="team-card reveal-up">
+          <div class="tc-ranks">
+            <span class="tc-rank">YAZILIM EKİBİ</span>
+          </div>
+          <div class="tc-avatar">
+            <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="8" r="4"/><path d="M6 21v-2a4 4 0 014-4h4a4 4 0 014 4v2"/></svg>
+          </div>
+          <h3 class="tc-name">Kaan Asaf Karip</h3>
+          <span class="tc-role">Yazılım</span>
+          <span class="tc-dept">Yazılım Geliştirme</span>
+        </div>
+
+        <!-- Member -->
+        <div class="team-card reveal-up">
+          <div class="tc-ranks">
+            <span class="tc-rank">YAZILIM EKİBİ</span>
+          </div>
+          <div class="tc-avatar">
+            <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="8" r="4"/><path d="M6 21v-2a4 4 0 014-4h4a4 4 0 014 4v2"/></svg>
+          </div>
+          <h3 class="tc-name">Alperen Gülşen</h3>
+          <span class="tc-role">Yazılım & Yapay Zeka</span>
+          <span class="tc-dept">AI & Yazılım Geliştirme</span>
+        </div>
+
+        <!-- Member -->
+        <div class="team-card reveal-up">
+          <div class="tc-ranks">
+            <span class="tc-rank">ELEKTRİK-ELEKTRONİK EKİBİ</span>
+          </div>
+          <div class="tc-avatar">
+            <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="8" r="4"/><path d="M6 21v-2a4 4 0 014-4h4a4 4 0 014 4v2"/></svg>
+          </div>
+          <h3 class="tc-name">Burak Canal</h3>
+          <span class="tc-role">Elektrik-Elektronik</span>
+          <span class="tc-dept">Donanım Geliştirme</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== ACTIVE PROJECTS ====== -->
+  <section class="section active-projects" id="active-projects">
+    <div class="container">
+      <div class="section-tag reveal-up">Aktif Projeler</div>
+      <h2 class="section-title reveal-up">Devam Eden Projelerimiz</h2>
+      <p class="section-subtitle reveal-up">Şu anda aktif olarak üzerinde çalıştığımız projeler.</p>
+      <div class="projects-duo">
+
+        <div class="project-big-card reveal-up">
+          <div class="pbc-status">AKTİF</div>
+          <div class="pbc-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+          </div>
+          <h3>Gök Siper</h3>
+          <p class="pbc-summary">
+            Hava savunma odaklı ileri teknoloji projesi. Düşman hava araçlarına karşı 
+            etkili ve maliyet-verimli savunma çözümleri geliştirmeyi hedefliyor. Optik algılama, 
+            otonom takip ve nötralize etme sistemlerini kapsamaktadır.
+          </p>
+          <div class="pbc-goal">
+            <strong>Amaç:</strong> Düşük maliyetli, etkili hava savunma sistemi geliştirmek ve 
+            milli savunma sanayisine katkıda bulunmak.
+          </div>
+          <div class="pbc-tags">
+            <span>Hava Savunma</span>
+            <span>Optik Sistemler</span>
+            <span>Otonom Takip</span>
+          </div>
+        </div>
+
+        <div class="project-big-card reveal-up">
+          <div class="pbc-status">AKTİF</div>
+          <div class="pbc-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+          </div>
+          <h3>YZDOSS</h3>
+          <p class="pbc-summary">
+            Yapay Zeka Destekli Otonom Tarım Sistemi. Tarımsal verimliliği artırmak için 
+            yapay zeka ve otonom teknolojileri birleştiren kapsamlı bir platform. Bitki sağlığı 
+            analizi, sulama optimizasyonu ve hasat zamanı tahminleri gibi modüller içermektedir.
+          </p>
+          <div class="pbc-goal">
+            <strong>Amaç:</strong> Türk çiftçisinin verimliliğini artırmak için yapay zeka tabanlı 
+            akıllı tarım çözümleri sunmak.
+          </div>
+          <div class="pbc-tags">
+            <span>Yapay Zeka</span>
+            <span>Tarım Teknolojisi</span>
+            <span>Otonom Sistemler</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== AR-GE PROJECTS ====== -->
+  <section class="section rnd-section" id="rnd">
+    <div class="container">
+      <div class="section-tag reveal-up">Ar-Ge Projelerimiz</div>
+      <h2 class="section-title reveal-up">Araştırma & Geliştirme</h2>
+      <p class="section-subtitle reveal-up">Geleceğin teknolojilerini bugünden araştırıyoruz.</p>
+      <div class="rnd-grid">
+
+        <div class="rnd-card reveal-up">
+          <div class="rnd-badge">Ar-Ge</div>
+          <h3>KSF</h3>
+          <span class="rnd-full">Kubbe Savar Füze</span>
+          <p>Kubbe tipi hava savunma sistemlerine karşı geliştirilen ileri füze teknolojisi. Yüksek manevra kabiliyeti ve hassas güdüm sistemi ile donatılmış savunma çözümü.</p>
+        </div>
+
+        <div class="rnd-card reveal-up">
+          <div class="rnd-badge">Ar-Ge</div>
+          <h3>OİS</h3>
+          <span class="rnd-full">Optik İha Savar</span>
+          <p>Optik algılama ve lazer teknolojileri kullanarak düşman İHA'larını tespit eden ve etkisiz hale getiren savunma sistemi. Elektro-optik sensör füzyonu ile çalışır.</p>
+        </div>
+
+        <div class="rnd-card rnd-update reveal-up">
+          <div class="rnd-badge update-badge">YZDOSS Güncelleme</div>
+          <h3>Tarım Aİ</h3>
+          <span class="rnd-full">Tarım Yapay Zeka Modülü</span>
+          <p>YZDOSS platformuna entegre edilecek yapay zeka modülü. Bitki hastalık tespiti, verim tahmini ve otomatik ilaçlama kararları için geliştirilmektedir.</p>
+        </div>
+
+        <div class="rnd-card rnd-update reveal-up">
+          <div class="rnd-badge update-badge">YZDOSS Güncelleme</div>
+          <h3>Tarım Akıllı Gözlük</h3>
+          <span class="rnd-full">Artırılmış Gerçeklik Tarım Gözlüğü</span>
+          <p>Çiftçilere sahada anlık bilgi sunan akıllı gözlük sistemi. Bitki sağlığı analizi, sulama önerileri ve hasat zamanı bilgilerini artırılmış gerçeklik ile görselleştirir.</p>
+        </div>
+
+        <div class="rnd-card rnd-update reveal-up">
+          <div class="rnd-badge update-badge">Gök Siper Güncelleme</div>
+          <h3>Optik Işın Şarjı</h3>
+          <span class="rnd-full">Optik Enerji Transfer Sistemi</span>
+          <p>Gök Siper projesine entegre edilecek kablosuz enerji transfer modülü. Optik ışın teknolojisi kullanarak uzaktan şarj ve enerji besleme kapasitesi sağlamayı hedefler.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== ACHIEVEMENTS ====== -->
+  <section class="section achievements-section" id="achievements">
+    <div class="container">
+      <div class="section-tag reveal-up">Başarılarımız</div>
+      <h2 class="section-title reveal-up">Dereceleler & Ödüller</h2>
+      <div class="achievements-list">
+
+        <div class="achievement-card reveal-up">
+          <div class="ach-medal">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="6" stroke="var(--accent)" stroke-width="1.5"/><path d="M8.5 14l-2 8 5.5-3 5.5 3-2-8" stroke="var(--accent)" stroke-width="1.5"/><text x="12" y="10.5" text-anchor="middle" fill="var(--accent)" font-size="6" font-weight="bold">3</text></svg>
+          </div>
+          <div class="ach-info">
+            <h3>Tarımfest 2026 — Türkiye 3.lüğü</h3>
+            <span class="ach-date">8 Mayıs 2026</span>
+            <p>Tarımfest yarışmasında Türkiye genelinde 3. sırayı elde ederek büyük bir başarıya imza attık. YZDOSS projemiz jüri tarafından takdir edilerek dereceye girdi.</p>
+          </div>
+        </div>
+
+        <div class="achievement-card achievement-founding reveal-up">
+          <div class="ach-medal">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+          </div>
+          <div class="ach-info">
+            <h3>Syperix Kuruluşu</h3>
+            <span class="ach-date">2025</span>
+            <p>Syperix takımı savunma teknolojileri, tarım inovasyonu ve yapay zeka alanlarında çalışmak üzere kuruldu. Vizyonumuzla yola çıktık.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== SOCIAL MEDIA ====== -->
+  <section class="section social-section" id="social">
+    <div class="container">
+      <div class="social-cta reveal-up">
+        <div class="social-cta-inner">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+          <h3>Bizi Instagram'da Takip Edin</h3>
+          <p>Projelerimiz, perde arkası görüntüleri ve güncellemeler için sosyal medya hesabımızı takip edin.</p>
+          <a href="https://instagram.com/syperix_tr" target="_blank" class="social-link">
+            @syperix_tr
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l10-10M7 7h10v10"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== SPONSORS & SUPPORTERS ====== -->
+  <section class="section supporters-section" id="supporters">
+    <div class="container">
+      <div class="section-tag reveal-up">Sponsorlar & Destekçiler</div>
+      <h2 class="section-title reveal-up">Destekçilerimiz</h2>
+      <p class="section-subtitle reveal-up">Projelerimize destek veren değerli kurum ve kuruluşlar.</p>
+      <div class="supporters-grid">
+
+        <div class="supporter-card reveal-up">
+          <div class="sup-type">Destekleyici</div>
+          <div class="sup-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+          </div>
+          <h3>Tokat Gazi Osman Paşa Üniversitesi</h3>
+          <span class="sup-detail">Milli Teknoloji Atölyesi</span>
+        </div>
+
+      </div>
+      <div class="sponsor-cta reveal-up">
+        <p>Sponsorumuz veya destekçimiz olmak ister misiniz?</p>
+        <a href="#contact" class="btn-main">Bize Ulaşın</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CONTACT ====== -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-tag reveal-up">İletişim</div>
+      <h2 class="section-title reveal-up">Bize Ulaşın</h2>
+      <p class="section-subtitle reveal-up">İş birliği, sponsorluk veya genel sorularınız için bizimle iletişime geçin.</p>
+      <div class="contact-layout">
+
+        <div class="contact-info-panel reveal-up">
+          <div class="cip-item">
+            <div class="cip-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <h4>Takım E-posta</h4>
+              <a href="mailto:syperix@hotmail.com">syperix@hotmail.com</a>
+            </div>
+          </div>
+          <div class="cip-item">
+            <div class="cip-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M6 21v-2a4 4 0 014-4h4a4 4 0 014 4v2"/></svg>
+            </div>
+            <div>
+              <h4>Takım Kaptanı — Tuğrul Murathan Tapar</h4>
+              <a href="mailto:tugrulmurathantapar@gmail.com">tugrulmurathantapar@gmail.com</a>
+            </div>
+          </div>
+          <div class="cip-item">
+            <div class="cip-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+            </div>
+            <div>
+              <h4>Sosyal Medya</h4>
+              <a href="https://instagram.com/syperix_tr" target="_blank">@syperix_tr</a>
+            </div>
+          </div>
+          <div class="cip-item">
+            <div class="cip-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <h4>Konum</h4>
+              <span>Türkiye</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-panel reveal-up">
+          <form id="contactForm">
+            <div class="form-duo">
+              <div class="form-field">
+                <label for="cName">Ad Soyad</label>
+                <input type="text" id="cName" placeholder="Adınız Soyadınız" required>
+              </div>
+              <div class="form-field">
+                <label for="cEmail">E-posta</label>
+                <input type="email" id="cEmail" placeholder="ornek@mail.com" required>
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="cSubject">Konu</label>
+              <select id="cSubject">
+                <option value="general">Genel Soru</option>
+                <option value="sponsorship">Sponsorluk</option>
+                <option value="collaboration">İş Birliği</option>
+                <option value="join">Ekibe Katılma</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="cMessage">Mesajınız</label>
+              <textarea id="cMessage" rows="5" placeholder="Mesajınızı yazın..." required></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Mesajı Gönder</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="assets/logo.png" alt="Syperix" class="footer-logo-img">
+          <span>SYPERIX</span>
+        </div>
+        <div class="footer-links">
+          <a href="#about">Hakkımızda</a>
+          <a href="#team">Üyelerimiz</a>
+          <a href="#active-projects">Projeler</a>
+          <a href="#rnd">Ar-Ge</a>
+          <a href="#achievements">Başarılar</a>
+          <a href="#contact">İletişim</a>
+        </div>
+        <div class="footer-social">
+          <a href="https://instagram.com/syperix_tr" target="_blank" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+          </a>
+          <a href="mailto:syperix@hotmail.com" aria-label="E-posta">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 — 2026 Syperix. Tüm hakları saklıdır.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ====== SCROLL TOP ====== -->
+  <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Yukarı çık">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <!-- ====== TOAST ====== -->
+  <div class="toast" id="toast">Mesajınız başarıyla gönderildi!</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
