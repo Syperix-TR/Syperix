@@ -1,0 +1,19 @@
+.wordmark .ch{display:inline-block;}
+.intro .wordmark .ch{clip-path:inset(100% -4% -12% -4%);}
+.intro-run .wordmark .ch{animation:chUp .42s cubic-bezier(.2,.7,.1,1) both;animation-delay:calc(var(--i) * 70ms + 100ms);}
+.intro .hero-meta,.intro .hero-lede,.intro .ledger{opacity:0;}
+.intro-run .hero-meta{animation:fadeUp .5s ease-out .3s both;}
+.intro-run .hero-lede{animation:fadeUp .5s ease-out 1s both;}
+.intro-run .ledger{animation:fadeUp .5s ease-out 1.15s both;}
+.intro .ruler{clip-path:inset(0 100% 0 0);}
+.intro-run .ruler{animation:rulerDraw 1.4s steps(48,end) .2s both;}
+.hero-field{transition:opacity .3s linear;}
+.hero.is-sweep .xh-v{transition:left .9s cubic-bezier(.65,0,.25,1);}
+.hero.is-sweep .xh-h{transition:top .9s cubic-bezier(.65,0,.25,1);}
+.hero.is-sweep .xh-out{transition:none;}
+.intro-run .hero .xh-out{top:calc(var(--y,50%) - 160px);}
+.hero.is-locked .xh-out{background:var(--signal);color:var(--paper);}
+@keyframes chUp{to{clip-path:inset(-12% -4% -12% -4%);}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:none;}}
+@keyframes rulerDraw{to{clip-path:inset(0 0 0 0);}}
+@media (prefers-reduced-motion:reduce){.intro .wordmark .ch,.intro .hero-meta,.intro .hero-lede,.intro .ledger,.intro .ruler{clip-path:none;opacity:1;}.intro-run .wordmark .ch,.intro-run .hero-meta,.intro-run .hero-lede,.intro-run .ledger,.intro-run .ruler{animation:none;}}
