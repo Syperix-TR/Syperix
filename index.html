@@ -10,9 +10,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="intro.css">
-  <script>(function(){var d=document.documentElement;d.classList.add('js');try{if(!sessionStorage.getItem('syperix-intro')&&!matchMedia('(prefers-reduced-motion: reduce)').matches&&(!location.hash||location.hash==='#top')){d.classList.add('intro');setTimeout(function(){d.classList.remove('intro','intro-run')},4500)}}catch(e){}})()</script>
+  <link rel="stylesheet" href="style.css?v=3">
+  <link rel="stylesheet" href="intro.css?v=3">
+  <script>(function(){var d=document.documentElement;d.classList.add('js');try{if((!sessionStorage.getItem('syperix-intro')||/[?&]intro/.test(location.search))&&!matchMedia('(prefers-reduced-motion: reduce)').matches&&(!location.hash||location.hash==='#top')){d.classList.add('intro');setTimeout(function(){d.classList.remove('intro','intro-run')},4500)}}catch(e){}})()</script>
 </head>
 <body>
   <a class="skip" href="#main">İçeriğe geç</a>
@@ -254,7 +254,7 @@
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-  <script src="intro.js"></script>
-  <script src="script.js"></script>
+  <script src="intro.js?v=3"></script>
+  <script src="script.js?v=3"></script>
 </body>
 </html>
