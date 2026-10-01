@@ -24,7 +24,7 @@
       <a href="#team"><b>02</b> Ekip</a>
       <a href="#projects"><b>03</b> Projeler</a>
       <a href="#rnd"><b>04</b> Ar-Ge</a>
-      <a href="#achievements"><b>05</b> Kayıt</a>
+      <a href="#achievements"><b>05</b> Başarılar</a>
       <a href="#supporters"><b>06</b> Destek</a>
       <a href="#contact"><b>07</b> İletişim</a>
     </nav>
@@ -74,15 +74,15 @@
     <!-- 02 EKİP -->
     <section class="sec team" id="team">
       <header class="sec-head"><span class="sec-no">02</span><h2>Ekip</h2></header>
-      <table class="roster">
-        <caption>Takım sicili - 5 üye</caption>
-        <thead><tr><th scope="col">No</th><th scope="col">Ad soyad</th><th scope="col">Görev</th><th scope="col">Birim</th></tr></thead>
+      <table class="roster" id="teamRoster">
+        <caption>Takım sicili - 5 üye (Profil ve sosyal medya detayları için üye satırına tıklayın)</caption>
+        <thead><tr><th scope="col">No</th><th scope="col">Ad soyad</th><th scope="col">Görev</th><th scope="col">Birim</th><th scope="col">Sınıf</th><th scope="col">Profil</th></tr></thead>
         <tbody>
-          <tr class="is-captain"><td>01</td><th scope="row">Tuğrul Murathan Tapar</th><td>Takım Kaptanı</td><td>Elektrik-Elektronik, Ar-Ge</td></tr>
-          <tr><td>02</td><th scope="row">Kaan Asaf Karip</th><td>Yazılım</td><td>Yazılım Geliştirme</td></tr>
-          <tr><td>03</td><th scope="row">Alperen Gülşen</th><td>Yazılım, Yapay Zeka</td><td>Yazılım Geliştirme</td></tr>
-          <tr><td>04</td><th scope="row">Burak Canal</th><td>Elektrik-Elektronik</td><td>Donanım Geliştirme</td></tr>
-          <tr><td>05</td><th scope="row">Ahmet Efe Kurulay</th><td>Tasarım</td><td>Tasarım, Görsel İletişim</td></tr>
+          <tr class="is-captain team-row" data-member="0" tabIndex="0" role="button" aria-label="Tuğrul Murathan Tapar detaylarını gör"><td>01</td><th scope="row">Tuğrul Murathan Tapar</th><td>Takım Kaptanı</td><td>Elektrik-Elektronik, Ar-Ge</td><td><span class="grade-badge">11. Sınıf</span></td><td><span class="detail-btn">Detay &rarr;</span></td></tr>
+          <tr class="team-row" data-member="1" tabIndex="0" role="button" aria-label="Kaan Asaf Karip detaylarını gör"><td>02</td><th scope="row">Kaan Asaf Karip</th><td>Yazılım</td><td>Yazılım Geliştirme</td><td><span class="grade-badge">9. Sınıf</span></td><td><span class="detail-btn">Detay &rarr;</span></td></tr>
+          <tr class="team-row" data-member="2" tabIndex="0" role="button" aria-label="Alperen Gülşen detaylarını gör"><td>03</td><th scope="row">Alperen Gülşen</th><td>Yazılım, Yapay Zeka</td><td>Yazılım Geliştirme</td><td><span class="grade-badge">11. Sınıf</span></td><td><span class="detail-btn">Detay &rarr;</span></td></tr>
+          <tr class="team-row" data-member="3" tabIndex="0" role="button" aria-label="Bekir Okumuş detaylarını gör"><td>04</td><th scope="row">Bekir Okumuş</th><td>Tasarım & Mekatronik</td><td>Tasarım, Mekatronik</td><td><span class="grade-badge">10. Sınıf</span></td><td><span class="detail-btn">Detay &rarr;</span></td></tr>
+          <tr class="team-row" data-member="4" tabIndex="0" role="button" aria-label="Ahmet Efe Kurulay detaylarını gör"><td>05</td><th scope="row">Ahmet Efe Kurulay</th><td>Tasarım</td><td>Tasarım, Görsel İletişim</td><td><span class="grade-badge">11. Sınıf</span></td><td><span class="detail-btn">Detay &rarr;</span></td></tr>
         </tbody>
       </table>
     </section>
@@ -175,9 +175,9 @@
       </ol>
     </section>
 
-    <!-- 05 KAYIT -->
+    <!-- 05 BAŞARILAR -->
     <section class="sec achievements" id="achievements">
-      <header class="sec-head"><span class="sec-no">05</span><h2>Kayıt</h2></header>
+      <header class="sec-head"><span class="sec-no">05</span><h2>Başarılar</h2></header>
       <ol class="log">
         <li>
           <time datetime="2026-05-08">8 Mayıs 2026</time>
@@ -206,6 +206,11 @@
         <p class="support-name">Tokat Gazi Osman Paşa Üniversitesi</p>
         <p class="support-detail">Milli Teknoloji Atölyesi</p>
       </div>
+      <div class="support-row">
+        <span class="support-kind">Destekleyici</span>
+        <p class="support-name">Tokat Şehir Okulları</p>
+        <p class="support-detail">Eğitim & Teknoloji Desteği</p>
+      </div>
       <p class="support-cta">Sponsor ya da destekçi olmak isterseniz <a href="#contact">bize yazın</a>.</p>
     </section>
 
@@ -219,7 +224,7 @@
           <div><dt>Instagram</dt><dd><a href="https://instagram.com/syperix_tr" target="_blank" rel="noopener">@syperix_tr</a></dd></div>
           <div><dt>Konum</dt><dd>Türkiye</dd></div>
         </dl>
-        <form class="paper" id="contactForm" action="https://formspree.io/f/mqpaeqde" method="POST">
+        <form class="paper" id="contactForm" action="https://formspree.io/f/mjykjyok" method="POST">
           <p class="paper-title">Mesaj formu</p>
           <label for="cName">Ad soyad</label>
           <input type="text" id="cName" name="name" autocomplete="name" required>
@@ -253,6 +258,34 @@
   </footer>
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- ====== TEAM MEMBER DETAIL MODAL ====== -->
+  <div class="team-modal" id="teamModal" aria-hidden="true" role="dialog" aria-labelledby="modalMemberName">
+    <div class="team-modal-backdrop" id="modalBackdrop"></div>
+    <div class="team-modal-box">
+      <button class="team-modal-close" id="modalClose" type="button" aria-label="Kapat">&times;</button>
+      <div class="team-modal-head">
+        <span class="modal-badge-no" id="modalMemberNo">01</span>
+        <span class="modal-badge-grade" id="modalMemberGrade">11. Sınıf</span>
+      </div>
+      <h3 class="modal-member-name" id="modalMemberName">Tuğrul Murathan Tapar</h3>
+      <p class="modal-member-role" id="modalMemberRole">Takım Kaptanı</p>
+      <p class="modal-member-dept" id="modalMemberDept">Elektrik-Elektronik, Ar-Ge</p>
+
+      <div class="modal-divider"></div>
+
+      <div class="modal-links">
+        <div class="modal-link-row">
+          <span class="link-label">LinkedIn</span>
+          <div id="modalLinkedinBox"></div>
+        </div>
+        <div class="modal-link-row">
+          <span class="link-label">GitHub</span>
+          <div id="modalGithubBox"></div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="intro.js?v=3"></script>
   <script src="script.js?v=3"></script>
