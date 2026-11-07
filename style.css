@@ -1351,4 +1351,95 @@ main, section, .sec {
   cursor: not-allowed;
   user-select: none;
 }
+/* ============================================================
+   DARK MODE THEME
+   ============================================================ */
+[data-theme="dark"] {
+  --paper: #111210;
+  --paper-2: #1a1a17;
+  --sheet: #161614;
+  --ink: #e8e3d4;
+  --mute: #8a8477;
+  --rule: rgba(232, 227, 212, 0.18);
+  --signal: #ff4a1c;
+}
+
+[data-theme="dark"] body {
+  background-color: var(--paper);
+  color: var(--ink);
+}
+
+[data-theme="dark"] .bar {
+  background-color: var(--paper);
+  border-bottom-color: var(--ink);
+}
+
+[data-theme="dark"] body::before {
+  border-left-color: var(--rule);
+  border-right-color: var(--rule);
+}
+
+[data-theme="dark"] .team-modal-box {
+  background-color: var(--paper);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+
+[data-theme="dark"] .team-modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+[data-theme="dark"] .grade-badge {
+  background-color: rgba(232, 227, 212, 0.07);
+}
+
+/* ============================================================
+   THEME TOGGLE BUTTON (sürmeli / toggle switch)
+   ============================================================ */
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.theme-toggle-track {
+  display: flex;
+  align-items: center;
+  width: 42px;
+  height: 22px;
+  border: 1.5px solid var(--ink);
+  border-radius: 11px;
+  background: transparent;
+  position: relative;
+  transition: background 0.25s, border-color 0.25s;
+  padding: 2px;
+}
+
+.theme-toggle-thumb {
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--ink);
+  transition: transform 0.25s, background 0.25s;
+  flex-shrink: 0;
+}
+
+/* Dark state → thumb slides right */
+.theme-toggle.is-dark .theme-toggle-track {
+  background: var(--ink);
+}
+
+.theme-toggle.is-dark .theme-toggle-thumb {
+  transform: translateX(20px);
+  background: var(--paper);
+}
+
+@media (max-width: 900px) {
+  .theme-toggle {
+    display: flex;
+  }
 }
