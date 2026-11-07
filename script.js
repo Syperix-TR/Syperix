@@ -88,8 +88,17 @@ var teamData = [
   {
     no: '05',
     name: 'Ahmet Efe Kurulay',
-    role: 'Tasarım',
-    dept: 'Tasarım, Görsel İletişim',
+    role: 'Elektrik-Elektronik',
+    dept: 'Elektrik-Elektronik, Tasarım',
+    grade: '11. Sınıf',
+    linkedin: 'https://linkedin.com/in/ahmet-efe-kurulay-461180441',
+    github: 'https://github.com/tetranitroachmetes'
+  },
+  {
+    no: '06',
+    name: 'Can Tuğrul Öztürk',
+    role: '3D & CNC',
+    dept: '3D Tasarım, CNC',
     grade: '11. Sınıf',
     linkedin: null,
     github: null
@@ -159,5 +168,34 @@ document.addEventListener('keydown', function(e) {
     closeTeamModal();
   }
 });
+
+
+// ============ DARK / LIGHT MODE TOGGLE ============
+var themeToggle = document.getElementById('themeToggle');
+var DARK_KEY = 'syperix-dark-mode';
+
+function applyTheme(dark) {
+  if (dark) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    if (themeToggle) themeToggle.setAttribute('aria-label', 'Açık moda geç');
+    if (themeToggle) themeToggle.classList.add('is-dark');
+  } else {
+    document.documentElement.removeAttribute('data-theme');
+    if (themeToggle) themeToggle.setAttribute('aria-label', 'Koyu moda geç');
+    if (themeToggle) themeToggle.classList.remove('is-dark');
+  }
+}
+
+var savedDark = false;
+try { savedDark = localStorage.getItem(DARK_KEY) === '1'; } catch(e) {}
+applyTheme(savedDark);
+
+if (themeToggle) {
+  themeToggle.addEventListener('click', function() {
+    var isDark = document.documentElement.hasAttribute('data-theme');
+    applyTheme(!isDark);
+    try { localStorage.setItem(DARK_KEY, isDark ? '0' : '1'); } catch(e) {}
+  });
+}
 
 })();
